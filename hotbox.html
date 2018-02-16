@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>NDTees | Home of The $10 Shirt</title>
+
+        <!-- Favicon -->
+        <link rel="shorcut icon" type="image/x-icon" href="images/miscellaneous/favicon.ico" />
+        
+        <!-- IE9 Standards Mode -->
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <!-- CSS files -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" />
+        <!--[if IE]><link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.IE.css" /><![endif]-->
+		
+        <!-- JavaScript files -->
+    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/googleAnalytics.js"></script>
+        <script type="text/javascript" src="js/textOverflow.js"></script>
+    	<script type="text/javascript" src="js/resizeCardsWithAds.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // Set the card labels' text overflow
+                $(".cardLabel").textOverflow("...", true);
+				
+                // Resize the product cards
+                resizeCards();
+		    });
+
+            // Resize the product cards when the window is resized
+            $(window).resize(function() {
+                resizeCards();
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- Navigation menu -->
+        <img id="logo" src="images/menu/NDTeesLogo.png" />
+        <a id="clientSubmissionLink" href="clientSubmission.html"><button>Create Your Own</button></a>
+        <a id="ourPhilosophyLink" href="ourPhilosophy.html"><button>Our Philosophy</button></a>
+        <a id="contactUsLink" href="contactUs.html"><button>Contact Us</button></a>
+	
+		<!-- Facebook -->
+        <!--
+        <div id="fb-root"></div>
+		<script>
+            (function(d, s, id){
+		        var js, fjs = d.getElementsByTagName(s)[0];
+		        if (d.getElementById(id)) {return;}
+		        js = d.createElement(s); js.id = id;
+		        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		        fjs.parentNode.insertBefore(js, fjs);
+		    }
+            (document, 'script', 'facebook-jssdk'));
+        </script>
+		<div class="fb-like" data-href="http://www.facebook.com/pages/NDTees/177844792281613" data-send="false" data-width="400" data-show-faces="true"></div>
+        -->
+	
+        <!-- Marketplace -->
+        <div id="marketplace" style="width: 85%; float:left;">
+	        <?php include "marketplace.php"; ?>
+        </div>
+        <div style="margin-top: 43px; width: 15%; height: 100%; float: left;">
+           <a href="http://www.gethotboxpizza.com"><img src="images/ads/hb.jpg" style="width:75%; margin-left: 25px; border: 1px solid black; margin-bottom: 10px;" /></a>
+           <a href="http://www.gethotboxpizza.com"><img src="images/ads/hb.jpg" style="width:75%; margin-left: 25px; border: 1px solid black; margin-bottom: 10px;" /></a>
+           <a href="http://www.gethotboxpizza.com"><img src="images/ads/hb.jpg" style="width:75%; margin-left: 25px; border: 1px solid black; margin-bottom: 10px;" /></a>
+        </div>
+
+        <!-- JavaScript files -->
+    	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.js"></script>
+        <script type="text/javascript" src="js/initializeFancyboxes.js"></script>
+    	<script type="text/javascript" src="js/cycle.js"></script>
+    </body>
+</html>

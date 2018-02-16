@@ -1,0 +1,430 @@
+/* General */
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body
+{
+    font-family: Helvetica, sans-serif;
+    margin: 20px 50px 20px 50px;
+    background-image: url('/images/miscellaneous/topGradient.gif');
+    background-repeat: repeat-x;
+    background-size: 2px;
+}
+
+#logo
+{
+    width: 290px;
+    height: 70px;
+    margin-right: 10px;
+    clear: none;
+    float: left;
+}
+
+#ourPhilosophyLink, #clientSubmissionLink, #contactUsLink
+{
+    text-decoration: none;
+    float: left;
+    margin: 20px 0px 0px 20px;
+}
+
+#marketplace
+{
+    clear: both;
+    display: block;
+    padding-top: 30px;
+}
+
+.generalHeader
+{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Palatino, 'Palatino Linotype', 'URW Palladio L', 'Book Antiqua', Georgia, serif;
+    color: #04601A;
+    margin-bottom: 10px;
+}
+
+.boldGreenText
+{
+    font-weight: bold;
+    color: #04601A;
+}
+
+.generalFormLabel
+{
+    font-weight: bold;
+}
+
+.generalParagraphText
+{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+  
+button
+{
+    background: #222 url(/images/miscellaneous/alertOverlay.png) repeat-x;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    background-color: #04601A;
+    font-size: 15px;
+    outline: none;
+}
+
+button::-moz-focus-inner
+{
+    border: 0;
+}
+
+input[type="radio"]
+{
+    outline: none;
+}
+
+.validInput
+{
+    background-color: #EEE;
+    border: 2px solid #DDD;
+    border-style: inset;
+    margin-bottom: 10px;
+}
+
+.invalidInput
+{
+    border: 2px solid #FF0000;
+    -moz-box-shadow: 0 0 5px #FF0000;
+    -webkit-box-shadow: 0 0 5px #FF0000;
+    box-shadow: 0 0 5px #FF0000;
+}
+
+.invalidText
+{
+    text-align: justify;
+    color: #FF3333;
+}
+
+#mailto
+{
+    color: #04601A;
+}
+
+/* Shirt product cards */
+.card
+{
+	background-color: white;
+	float: left;
+	margin: 15px 15px 30px 15px;
+	padding: 15px 15px 8px 15px;
+    border: 1px solid #BBB;
+    border-radius: 6px;
+    -moz-box-shadow:inset 0 0 15px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:inset 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow:inset 0px 0px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+	outline: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+
+.card:hover
+{
+    box-shadow:inset 0px 0px 25px rgba(0, 0, 0, 0.6);
+}
+
+.cardImage
+{
+    margin-bottom: 6px;
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: -60px;
+}
+
+.cardLabel
+{
+    font: 18px Palatino, 'Palatino Linotype', 'URW Palladio L', 'Book Antiqua', Georgia, serif;
+    text-align: center;
+    color: black;
+    width: 100%;
+    float: left;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    top: -60px;
+}
+
+.token
+{
+    padding: 5px 0px;
+    width: 132px;
+    height: 50px;
+    border: 1px solid #BBB;
+    border-radius: 6px;
+    background-color: #DDD;
+    text-decoration: none;
+    text-align:center;
+    clear: both;
+    position: relative;
+    top: -37px;
+    left: -30px;
+    z-index: 1;
+}
+
+.tokenSection
+{
+    width: 65px;
+    height: 50px;
+    float: left;
+    font-family: Palatino, 'Palatino Linotype', 'URW Palladio L', 'Book Antiqua', Georgia, serif;
+    color: black;
+}
+
+.tokenValueText
+{
+    margin-top: -5px;
+    font-size: 28px;
+}
+
+/* Client submission form */
+.clientSubmissionForm
+{
+	width: 480px;
+    height: 525px;
+}
+
+.clientSubmissionFormContainer
+{
+    height: 525px;
+    margin:5px 10px 0px 10px;
+}
+
+.clientSubmissionFormSelect
+{
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+#colorPicker
+{
+    margin-bottom: 15px;
+    margin-left: -3px;
+}
+
+.colorPickerOption
+{
+	cursor: pointer;
+    float: left;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #000;
+	margin: 2px 3px 0px 3px;
+}
+
+.colorPickerOptionSelected
+{
+	float: left;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #333;
+	margin: 0px 1px 0px 1px;
+}
+
+#shirtImage
+{
+    position: absolute;
+    top: 0px;
+    width: 350px;
+    margin-right: 10px;
+}
+
+#browseButton
+{
+    position: absolute;
+    top: -4px;
+    right: 10px;
+    font-size: 12px;
+}
+
+#uploadArea
+{
+    margin-bottom: 10px;
+}
+
+iframe
+{
+    display:none;
+}
+
+/* Our philosophy */
+#ourPhilosophyContainer
+{
+    width: 1000px;
+    margin: 5px 10px 5px 10px;
+}
+
+#facebookLink, #twitterLink
+{
+    color: #04601A;
+    outline: none;
+}
+
+/* Purchase form */
+#purchaseFormDormSelect
+{
+    width: 135px;
+}
+
+#purchaseFormSizeSelect
+{
+    margin-bottom: 10px;
+    width: 115px;
+}
+
+/* Contact us form */
+.contactUsForm
+{
+	width: 480px;
+    height: 520px;
+}
+
+.contactUsFormContainer
+{
+    height: 520px;
+    margin: 5px 10px 0px 10px;
+}
+
+.contactUsFormInput, .clientSubmissionFormInput
+{
+    width: 460px;
+    font: 14px Palatino, 'Palatino Linotype', 'URW Palladio L', 'Book Antiqua', Georgia, serif;
+    margin-bottom: 15px;
+}
+
+#contactUsMessage, #laundryBag
+{
+    height: 130px;
+    font: 14px Palatino, 'Palatino Linotype', 'URW Palladio L', 'Book Antiqua', Georgia, serif;
+    resize: none;
+    overflow: auto;
+}
+
+/* Shirt projection */
+#shirtProjection
+{
+    height: 450px;
+	width: 820px;
+}
+
+.projectionLeft
+{
+	float: left;
+	height: 450px;
+	width: 390px;
+}
+
+.projectionLeftImg
+{
+	height: 400;
+	width: 370;
+    margin: 25px 10px 25px 10px;
+}
+
+.projectionRight
+{
+	height: 450px;
+	width: 425px;
+}
+
+.projectionRightContainer
+{
+	height: 430px;
+	width: 405px;
+    margin: 10px;
+}
+
+.shirtPrice
+{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Palatino, 'Palatino Linotype', 'URW Palladio L', 'Book Antiqua', Georgia, serif;
+}
+
+#stockTableHeader
+{
+    text-align: center;
+    font: bold 25px Palatino, 'Palatino Linotype', 'URW Palladio L', 'Book Antiqua', Georgia, serif;
+    color: #04601A;
+    margin-bottom: 2px;
+}
+
+#stockTable
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+#stockTable th
+{
+    font-size: 13px;
+    background-color: #71C671;
+    color: #2F4F2F;
+    border: 1px solid #2F4F2F;
+    padding: 6px;
+}
+
+#stockTable td
+{
+    background-color: #CCFFCC;
+    color: #666699;
+    border: 1px solid #2F4F2F;
+    padding: 6px;
+    height: 25px;
+    width: 100px;
+}
+
+#roomNumber
+{
+    width: 40px;
+    margin-bottom: 0px;
+}
+
+.purchaseFormInput
+{
+    width: 405px;
+    font: 14px Palatino, 'Palatino Linotype', 'URW Palladio L', 'Book Antiqua', Georgia, serif;
+}
+
+#purchaseFormAddressContainer, #addressRadioButtonContainer
+{
+    margin-bottom: 10px;
+}
+
+#purchaseFormDormSelect
+{
+    margin-right: 15px;
+    margin-bottom: 0px;
+}

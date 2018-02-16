@@ -1,0 +1,58 @@
+input[type="password"]
+{
+    background-color: #EEE;
+    border: 2px solid #DDD;
+    border-style: inset;
+}
+
+#customQueryContainer, #commonQueryContainer
+{
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+    border-bottom: 3px dotted #1D6535;
+}
+
+#queryButton
+{
+    margin-left: 5px;
+}
+
+#diagnosticTable
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#diagnosticTable th
+{
+    font-size: 13px;
+    background-color: #71C671;
+    color: #2F4F2F;
+    border: 1px solid #2F4F2F;
+    padding: 6px;
+}
+
+#diagnosticTable td
+{
+    color: #666699;
+    border: 1px solid #2F4F2F;
+    padding: 6px;
+    height: 25px;
+}
+
+#diagnosticTable tr:nth-child(2n)
+{
+    background-color: #CCFFCC;
+}
+
+#diagnosticTable tr:nth-child(2n+1)
+{
+    background-color: #CCE2CC;
+}
+
+#diagnosticTable tr:hover td
+{
+    background-color: #9BCD9B;
+}

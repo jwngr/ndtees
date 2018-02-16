@@ -1,0 +1,60 @@
+<html>
+    <head>
+		<script type="text/javascript" src="js/contactUsSlideControl.js"></script>
+    </head>
+
+    <body>
+        <div class="contactUsForm">
+            <!-- EMAIL FORM -->
+            <div class="contactUsFormContainer">
+				<!-- Header -->
+                <p class="generalHeader">Contact Us</p>
+
+                <!-- Introduction -->
+                <p class="generalParagraphText">
+                    We welcome your feedback on anything and everything related to <span class="boldGreenText">NDTees</span>. Either send us an email at <a id="mailto" href="mailto:support@ndtees.com">support@ndtees.com</a> or fill out the form below to get in contact with us.
+                </p>
+                
+                <!-- Name -->
+                <label class="generalFormLabel" for="contactUsName">Name</label>
+                <br />
+        	    <input id="contactUsName" class="validInput contactUsFormInput" type="text" value="" />
+                <br />
+
+                <!-- Email address -->
+                <label class="generalFormLabel" for="contactUsEmail">Email Address</label>
+                <br />
+		        <input id="contactUsEmail" class="validInput contactUsFormInput" type="text" value="" />
+                <br />
+
+        	    <!-- Subject -->
+                <label class="generalFormLabel" for="contactUsSubject">Subject</label>
+                <br />
+        	    <input id="contactUsSubject" class="validInput contactUsFormInput" type="text" value="" />
+                <br />
+    	
+                <!-- Message -->
+	    	    <label class="generalFormLabel" for="contactUsMessage">Message</label>
+                <br />
+		        <textarea id="contactUsMessage" class="validInput contactUsFormInput" type="text" value="" />
+                <br />
+               
+                <!-- Submit button -->
+                <div style="text-align: center;">
+                    <button id="emailSubmitButton" class="contactUsSlide">Submit</button>
+        	    </div>
+            </div>
+
+            <!-- THANK YOU MESSAGE -->
+            <div class="contactUsFormContainer">
+				<!-- Header -->
+        		<p class="generalHeader">Thanks!</p>
+
+				<!-- Message -->
+                <p class="generalParagraphText">
+        		    Your message has been successfully sent. We really appreciate your feedback!
+                </p>
+        	</div>
+        </div>
+    </body>
+</html>

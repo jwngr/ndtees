@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/ajaxUpload.js"></script>
+        <script type="text/javascript" src="js/clientSubmissionSlideControl.js"></script>
+	</head>
+	
+    <body>
+		<div class="clientSubmissionForm">
+			<!-- CLIENT SUBMISSION FORM PART 1 -->
+            <div class="clientSubmissionFormContainer">
+				<!-- Header -->
+				<p class="generalHeader">Shirt Submission</p>
+				
+				<!-- Instructions -->
+                <p class="generalParagraphText">
+				    Want the chance to finally make that shirt you and your buddies have been talking about? Help us expand the <span class="boldGreenText">NDTees</span> Marketplace and let us handle all the logistics.  And duh, of course you'll still get the normal benefits that you would expect from selling your very own shirt, we just make it easy at a lower cost to you!
+                </p>
+
+   				<!-- Client name -->
+    			<label class="generalFormLabel" for="clientName">Name</label>
+                <br />
+	    		<input id="clientName" class="validInput clientSubmissionFormInput" type="text" value="" />
+				
+   				<!-- Client email -->
+    			<label class="generalFormLabel" for="clientEmail">Email</label>
+                <br />
+	    		<input id="clientEmail" class="validInput clientSubmissionFormInput" type="text" value="" />
+				
+			    <!-- Shirt name -->
+   				<label class="generalFormLabel" for="shirtName">Shirt Name</label>
+                <br />
+       			<input id="shirtName" class="validInput clientSubmissionFormInput" type="text" value="" />
+
+   				<!-- Shirt type -->
+    			<label class="generalFormLabel" for="shirtType">Shirt Type</label>
+                <br />
+	    		<select id="shirtType" class="validInput clientSubmissionFormSelect">
+		    		<option value="tee">Tee</option>
+			    	<option value="tank">Tank</option>
+   				</select>
+                <br />
+
+    			<!-- Shirt color -->
+	    		<label class="generalFormLabel" for="shirtColor">Shirt Color: </label>
+                <label id="selectedColor">Irish</label>
+
+                <div id="teeColorPicker" class="colorPicker">
+                    <div class="colorPickerOption" id="cTeeBlack" name="Black" style="background-color:#000000;"></div>
+                    <div class="colorPickerOption" id="cTeeWhite" name="White" style="background-color:#ffffff;"></div>
+                    <div class="colorPickerOption" id="cTeeAsh" name="Ash" style="background-color:#E0E1E7;"></div>
+                    <div class="colorPickerOption" id="cTeeHeather" name="Heather" style="background-color:#3F516C;"></div>
+                    <div class="colorPickerOption" id="cTeeLight" name="Light" style="background-color:#87D9D4;"></div>
+                    <div class="colorPickerOption" id="cTeeBaby" name="Baby Blue" style="background-color:#BAEDFF"></div>
+                    <div class="colorPickerOption colorPickerOptionSelected" id="cTeeIrish" name="Irish" style="background-color:#00F723;"></div>
+                    <div class="colorPickerOption" id="cTeeSapphire" name="Sapphire" style="background-color:#009CBA;"></div>
+                    <div class="colorPickerOption" id="cTeeSun" name="Sun" style="background-color:#FBDE4A;"></div>
+                    <div class="colorPickerOption" id="cTeeSafety" name="Safety" style="background-color:#CCFF42;"></div>
+                    <div class="colorPickerOption" id="cTeeSerene" name="Serene" style="background-color:#AEBFA6;"></div>
+                    <div class="colorPickerOption" id="cTeeRed" name="Red" style="background-color:#E12834;"></div>
+                    <div class="colorPickerOption" id="cTeeDaisy" name="Daisy" style="background-color:#FFD433;"></div>
+                    <div class="colorPickerOption" id="cTeeDark" name="Dark" style="background-color:#43464F;"></div>
+                    <div class="colorPickerOption" id="cTeeCandy" name="Candy" style="background-color:#DB78FF;"></div>
+                    <div class="colorPickerOption" id="cTeeAzalea" name="Azalea" style="background-color:#FA63FF;"></div>
+                </div>
+
+                <div id="tankColorPicker" class="colorPicker">
+                    <div class="colorPickerOption" id="cTankAsh" name="Ash" style="background-color:#E0E1E7;"></div>
+                    <div class="colorPickerOption" id="cTankWhite" name="White" style="background-color:#ffffff;"></div>
+                    <div class="colorPickerOption" id="cTankSport" name="Sport" style="background-color:#AFAFAF;"></div>
+                    <div class="colorPickerOption" id="cTankBlack" name="Black" style="background-color:#000000;"></div>
+                    <div class="colorPickerOption" id="cTankNavy" name="Navy" style="background-color:#00274D;"></div>
+                    <div class="colorPickerOption" id="cTankRed" name="Red" style="background-color:#e12834"></div>
+                    <div class="colorPickerOption" id="cTankRoyal" name="Royal" style="background-color:#006BFA;"></div>
+                </div>
+                <br /><br />
+
+                <!-- Next button -->
+				<div style="text-align:center;">
+                    <button id="clientSubmissionButton1">Next</button>
+				</div>
+			</div>	
+
+			<!-- CLIENT SUBMISSION FORM PART 2 -->
+            <div class="clientSubmissionFormContainer">
+				<!-- Header -->
+				<p class="generalHeader">Shirt Submission</p>
+				
+                <!-- Shirt image -->
+	    		<label class="generalFormLabel" for="shirtImage">Shirt Image</label>
+                <br />
+				<form style="position:relative;" id="sleeker" class="clientSubmissionFormInput" action="submission/ajaxUpload.php" method="post" name="sleeker" enctype="multipart/form-data">
+					<input type="hidden" name="maxSize" value="9999999999" />
+					<input type="hidden" name="maxW" value="200" />
+					<input type="hidden" name="fullPath" value="http://www.ndtees.com/images/clientUploads/" />
+					<input type="hidden" name="relPath" value="../images/clientUploads/" />
+					<input type="hidden" name="colorR" value="255" />
+					<input type="hidden" name="colorG" value="255" />
+					<input type="hidden" name="colorB" value="255" />
+					<input type="hidden" name="maxH" value="300" />
+					<input type="hidden" name="filename" value="filename" />
+                    <p>
+                        <input id="shirtImageHidden" class="validInput" type="file" name="filename" style="visibility:hidden;" onchange="ajaxUpload(this.form,'submission/ajaxUpload.php?filename=name&amp;maxSize=9999999999&amp;maxW=200&amp;fullPath=http://www.ndtees.com/images/clientUploads/&amp;relPath=../images/clientUploads/&amp;colorR=255&amp;colorG=255&amp;colorB=255&amp;maxH=300','uploadArea','File Uploading Please Wait...&lt;br /&gt;&lt;img src=\'images/loader_light_blue.gif\' width=\'128\' height=\'15\' border=\'0\' /&gt;','&lt;img src=\'images/error.gif\' width=\'16\' height=\'16\' border=\'0\' /&gt; Error in Upload, check settings and path info in source code.'); copyFileLocation(); return false;" />
+                    </p>
+       			    <input id="shirtImage" class="validInput clientSubmissionFormInput" type="text" value="" onclick="document.getElementById('shirtImageHidden').click()" />
+					<button id="browseButton" type="button" onclick="document.getElementById('shirtImageHidden').click()">Browse...</button>
+				</form>
+				
+                <!-- Upload area -->
+                <div id="uploadArea"></div>
+
+				<!-- Laundry bag -->
+				<label class="generalFormLabel" for="laundryBag">Pitch</label>
+                <br />
+				<textarea id="laundryBag" class="validInput clientSubmissionFormInput" type="text" value="" />
+
+				<!-- Shirt price -->
+				<label class="generalFormLabel" for="shirtPrice">Price</label>
+                <br />
+				<select id="shirtPrice" class="validInput clientSubmissionFormSelect">
+					<option value="10.00">$10.00</option>
+					<option value="11.00">$11.00</option>
+					<option value="12.00">$12.00</option>
+					<option value="13.00">$13.00</option>
+					<option value="14.00">$14.00</option>
+					<option value="15.00">$15.00</option>
+				</select>
+				
+                <!-- Navigation buttons -->
+				<div style="text-align: center;">
+					<button id="clientSubmissionButtonBack" style="margin-right:5px;">Back</button>
+					<button id="clientSubmissionButton2">Submit</button>
+				</div>
+			</div>
+			
+            <!-- THANK YOU MESSAGE -->
+            <div class="clientSubmissionFormContainer">
+				<!-- Header -->
+				<p class="generalHeader">
+					<?php
+						$lines = file("txt/excitement.txt");
+						echo $lines[array_rand($lines)];
+					?>
+				</p>
+		        
+                <!-- Post-purchase text -->
+	    	    <p class="generalParagraphText">
+                    Thanks for submitting your shirt design!
+                </p>
+		        <p class="generalParagraphText">
+                    We'll contact you within a few days so we can move forward with setting up 
+                    and ordering your shirt. We appreciate your interest in partnering with 
+                    <span class="boldGreenText">NDTees</span>!
+                </p>
+	        </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+#######################################################
+#  Create a new, fully populated database for NDTees  #
+#######################################################
+(1) Create a blank database
+    (a) From the command prompt, run:
+            mysql -u root -p
+    (b) Type in the password for root
+    (c) From mysql, run:
+            create database ndteees;
+    (d) From mysql, run:
+            exit;
+(2) Build the database tables
+    (a) From the command prompt, run:
+            buildDatabase.sh
+    (b) Type:
+            yes
+(3) Populate the Shirt table
+    (a) From the command prompt, run:
+            populateShirtTable.sh
+    (b) Type:
+            yes
